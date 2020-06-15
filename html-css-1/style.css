@@ -1,19 +1,24 @@
 .row1 {
     background-color: grey;
+    margin: auto;
 }
 
 .row2 {
     background-color: black;
+    margin: auto;
 }
 
 .row3 {
     background-color: white;
+    margin: auto;
 }
 
 .row4 {
     background-color: whitesmoke;
+    margin: auto;
 }
 
-.row5 {
+footer {
     background-color: purple;
+    margin: auto;
 }

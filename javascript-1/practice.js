@@ -168,14 +168,23 @@ let total = myNumbers.reduce((acc, numbers) => acc += numbers,0)
 //Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
+let myNumbersIndex = []
+myNumbers.forEach((element, index) => myNumbersIndex.push(index))
+
 
 //calls a function
 //////////////////PROBLEM 18////////////////////
 
-// Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
+// Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. 
+//Store the resulting array in a variable named 'forTheLoveOfGeorge'.
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Code Here
+let forTheLoveOfGeorge = notGeorge.map(element => {
+		if(element !== "George") {
+			return "George"
+		}
+}) 
 
 //////////////////PROBLEM 19////////////////////
 
@@ -190,9 +199,11 @@ const people = [
 ]
 
 // Code Here
-
+let enemies = people.filter(element => !element.friend)
 //////////////////PROBLEM 20////////////////////
 
-// Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
+// Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'.
+// Use .reduce().
 
 // Code Here
+let totallyAwesome = people.reduce((acc, element) => acc += element.awesomeLevel,0)
